@@ -11,6 +11,7 @@ export function Header() {
   return <header className="site-header">
     <div className="container header-inner">
       <Logo />
+      fixe
       <nav className="desktop-nav" aria-label="Navegação principal">
         {NAV_ITEMS.map(item => <Link key={item.href} href={item.href}>{item.label}</Link>)}
       </nav>

@@ -3,3 +3,4 @@ import { ProblemSection, SolutionSection, HowAndUses, PilotSection, ImpactSectio
 import { ContactSection } from "@/components/sections/contact-section";
 
 export default function Home(){return <><Hero/><ProblemSection/><SolutionSection/><HowAndUses/><PilotSection/><ImpactSection/><ScaleAndDifference/><CTASection/><ContactSection/></>}
+
