@@ -1,6 +1,0 @@
-import { Building2, Mail, MapPin, ShieldCheck } from "lucide-react";
-import { SectionHeading } from "@/components/ui/section-heading";
-import { CONTACT_EMAIL } from "@/lib/constants";
-import { ContactForm } from "./contact-form";
-
-export function ContactSection(){return <section className="section contact" id="contacto"><div className="container contact-grid"><div className="contact-copy"><SectionHeading eyebrow="Contacto" title="Vamos falar sobre o seu território." text="Indique-nos a sua entidade e o território onde pretende utilizar o FireIndex. Entraremos em contacto para avaliar as necessidades de configuração e implementação da plataforma."/><div className="contact-detail"><Mail/><span><small>Email</small><a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a></span></div><div className="contact-detail"><Building2/><span><small>Entidade promotora</small><strong>Bombeiros Voluntários de Albergaria-a-Velha</strong></span></div><div className="contact-detail"><MapPin/><span><small>Âmbito</small><strong>Implementações em território nacional</strong></span></div><div className="privacy-note"><ShieldCheck/><p><strong>Os seus dados são tratados com cuidado.</strong> Utilizamo-los apenas para responder ao seu pedido, de acordo com a política de privacidade.</p></div></div><ContactForm/></div></section>}
