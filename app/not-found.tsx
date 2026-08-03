@@ -1,0 +1,2 @@
+import { ArrowLeft, Compass } from "lucide-react"; import { Button } from "@/components/ui/button";
+export default function NotFound(){return <section className="not-found"><div className="not-found-map"/><div><span>404</span><Compass/><h1>Esta localização não foi encontrada.</h1><p>A página que procura pode ter sido movida ou já não estar disponível.</p><Button href="/"><ArrowLeft size={17}/> Voltar à página inicial</Button></div></section>}
