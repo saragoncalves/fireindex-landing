@@ -12,8 +12,11 @@ export function ContactForm() {
   async function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault(); setStatus({ type: "loading" });
     const form = event.currentTarget;
-    const data = Object.fromEntries(new FormData(form));
-    data.privacy = data.privacy === "on";
+    const formData = new FormData(form);
+    const data = {
+      ...Object.fromEntries(formData),
+      privacy: formData.get("privacy") === "on",
+    };
     try {
       const response = await fetch("/api/contact", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) });
       const result = await response.json();
